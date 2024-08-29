@@ -1,0 +1,247 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="property_tag_renovated" model="estate.property.tag">
+            <field name="name">Renovated</field>
+        </record>
+        <record id="property_tag_cozy" model="estate.property.tag">
+            <field name="name">Cozy</field>
+        </record>
+        <record id="property_tag_new" model="estate.property.tag">
+            <field name="name">New</field>
+        </record>
+        <record id="property_tag_abandoned" model="estate.property.tag">
+            <field name="name">Abandoned</field>
+        </record>
+        <record id="property_tag_luxury" model="estate.property.tag">
+            <field name="name">Luxury</field>
+        </record>
+
+        <record id="property_type_house" model="estate.property.type">
+            <field name="name">House</field>
+        </record>
+        <record id="property_type_apartment" model="estate.property.type">
+            <field name="name">Apartment</field>
+        </record>
+        <record id="property_type_penthouse" model="estate.property.type">
+            <field name="name">Penthouse</field>
+        </record>
+        <record id="property_type_castle" model="estate.property.type">
+            <field name="name">Castle</field>
+        </record>
+        <record id="property_type_house" model="estate.property.type">
+            <field name="name">House</field>
+        </record>
+        <record id="property_type_loft" model="estate.property.type">
+            <field name="name">Loft</field>
+        </record>
+        <record id="property_type_townhouse" model="estate.property.type">
+            <field name="name">Townhouse</field>
+        </record>
+        <record id="property_type_studio" model="estate.property.type">
+            <field name="name">Studio</field>
+        </record>
+
+        <!-- Properties -->
+        <record id="property_demo_1" model="estate.property">
+            <field name="name">Luxury Penthouse with City View</field>
+            <field name="description">A stunning penthouse offering panoramic views of the city skyline.</field>
+            <field name="postcode">H4D 4D4</field>
+            <field name="date_availability">2024-09-01</field>
+            <field name="expected_price">1200000</field>
+            <field name="best_offer">1150000</field>
+            <field name="selling_price">1175000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">300</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="total_area">300</field>
+            <field name="type_id" ref="property_type_penthouse"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_new')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_2" model="estate.property">
+            <field name="name">Cozy Loft in Downtown</field>
+            <field name="description">A modern loft located in the heart of downtown, perfect for young professionals.</field>
+            <field name="postcode">H5E 5E5</field>
+            <field name="date_availability">2024-10-15</field>
+            <field name="expected_price">400000</field>
+            <field name="best_offer">380000</field>
+            <field name="selling_price">390000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">100</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="total_area">100</field>
+            <field name="type_id" ref="property_type_loft"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_cozy')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_3" model="estate.property">
+            <field name="name">Modern Townhouse with Garage</field>
+            <field name="description">A spacious townhouse with modern amenities, located in a quiet neighborhood.</field>
+            <field name="postcode">H6F 6F6</field>
+            <field name="date_availability">2024-11-01</field>
+            <field name="expected_price">600000</field>
+            <field name="best_offer">570000</field>
+            <field name="selling_price">585000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">180</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">50</field>
+            <field name="garden_orientation">east</field>
+            <field name="total_area">230</field>
+            <field name="type_id" ref="property_type_townhouse"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_4" model="estate.property">
+            <field name="name">Renovated Studio in Historic District</field>
+            <field name="description">A charming studio apartment in a historic building, fully renovated.</field>
+            <field name="postcode">H7G 7G7</field>
+            <field name="date_availability">2024-12-01</field>
+            <field name="expected_price">250000</field>
+            <field name="best_offer">230000</field>
+            <field name="selling_price">240000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">50</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="total_area">50</field>
+            <field name="type_id" ref="property_type_studio"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_5" model="estate.property">
+            <field name="name">Luxury Castle with Private Park</field>
+            <field name="description">A magnificent castle with extensive grounds and a private park.</field>
+            <field name="postcode">H8H 8H8</field>
+            <field name="date_availability">2025-01-01</field>
+            <field name="expected_price">5000000</field>
+            <field name="best_offer">4800000</field>
+            <field name="selling_price">4900000</field>
+            <field name="bedrooms">10</field>
+            <field name="living_area">1500</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">500</field>
+            <field name="garden_orientation">south</field>
+            <field name="total_area">2000</field>
+            <field name="type_id" ref="property_type_castle"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_renovated')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_6" model="estate.property">
+            <field name="name">Cozy Apartment in Uptown</field>
+            <field name="description">A cozy and affordable apartment in a desirable uptown area.</field>
+            <field name="postcode">H9I 9I9</field>
+            <field name="date_availability">2024-08-01</field>
+            <field name="expected_price">300000</field>
+            <field name="best_offer">280000</field>
+            <field name="selling_price">290000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">80</field>
+            <field name="facades">2</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="total_area">80</field>
+            <field name="type_id" ref="property_type_apartment"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_cozy')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_7" model="estate.property">
+            <field name="name">Modern Loft in Converted Warehouse</field>
+            <field name="description">A sleek and modern loft in a converted warehouse, featuring high ceilings and open spaces.</field>
+            <field name="postcode">H1J 1J1</field>
+            <field name="date_availability">2024-09-15</field>
+            <field name="expected_price">450000</field>
+            <field name="best_offer">420000</field>
+            <field name="selling_price">435000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">120</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="total_area">120</field>
+            <field name="type_id" ref="property_type_loft"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_8" model="estate.property">
+            <field name="name">Spacious House with Large Garden</field>
+            <field name="description">A large house with a beautiful garden, perfect for families.</field>
+            <field name="postcode">H2K 2K2</field>
+            <field name="date_availability">2024-10-01</field>
+            <field name="expected_price">700000</field>
+            <field name="best_offer">670000</field>
+            <field name="selling_price">685000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">200</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">150</field>
+            <field name="garden_orientation">west</field>
+            <field name="total_area">350</field>
+            <field name="type_id" ref="property_type_house"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_cozy')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_9" model="estate.property">
+            <field name="name">Abandoned Castle with Restoration Potential</field>
+            <field name="description">An ancient castle in need of restoration, with significant historical value.</field>
+            <field name="postcode">H3L 3L3</field>
+            <field name="date_availability">2024-11-15</field>
+            <field name="expected_price">1500000</field>
+            <field name="best_offer">1400000</field>
+            <field name="selling_price">1450000</field>
+            <field name="bedrooms">12</field>
+            <field name="living_area">1200</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">400</field>
+            <field name="garden_orientation">north</field>
+            <field name="total_area">1600</field>
+            <field name="type_id" ref="property_type_castle"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_abandoned')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="property_demo_10" model="estate.property">
+            <field name="name">Renovated Villa with Infinity Pool</field>
+            <field name="description">A luxurious villa with a modern infinity pool, completely renovated.</field>
+            <field name="postcode">H4M 4M4</field>
+            <field name="date_availability">2024-12-15</field>
+            <field name="expected_price">2000000</field>
+            <field name="best_offer">1900000</field>
+            <field name="selling_price">1950000</field>
+            <field name="bedrooms">6</field>
+            <field name="living_area">500</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">200</field>
+            <field name="garden_orientation">east</field>
+            <field name="total_area">700</field>
+            <field name="type_id" ref="property_type_castle"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_renovated')])]"/>
+            <field name="sales_id" ref="base.user_admin"/>
+        </record>
+
+    </data>
+</odoo>

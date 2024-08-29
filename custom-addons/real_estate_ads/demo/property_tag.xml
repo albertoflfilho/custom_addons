@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record id="property_tag_renovated" model="estate.property.tag">
+            <field name="name">Renovated</field>
+        </record>
+        <record id="property_tag_cozy" model="estate.property.tag">
+            <field name="name">Cozy</field>
+        </record>
+        <record id="property_tag_new" model="estate.property.tag">
+            <field name="name">New</field>
+        </record>
+        <record id="property_tag_abandoned" model="estate.property.tag">
+            <field name="name">Abandoned</field>
+        </record>
+        <record id="property_tag_luxury" model="estate.property.tag">
+            <field name="name">Luxury</field>
+        </record>
+        <record id="property_tag_beachfront" model="estate.property.tag">
+            <field name="name">Beachfront</field>
+        </record>
+        <record id="property_tag_fixer_upper" model="estate.property.tag">
+            <field name="name">Fixer Upper</field>
+        </record>
+        <record id="property_tag_historic" model="estate.property.tag">
+            <field name="name">Historic</field>
+        </record>
+        <record id="property_tag_open_plan" model="estate.property.tag">
+            <field name="name">Open Plan</field>
+        </record>
+        <record id="property_tag_mountain_view" model="estate.property.tag">
+            <field name="name">Mountain View</field>
+        </record>
+        <record id="property_tag_gated_community" model="estate.property.tag">
+            <field name="name">Gated Community</field>
+        </record>
+        <record id="property_tag_smart_home" model="estate.property.tag">
+            <field name="name">Smart Home</field>
+        </record>
+        <record id="property_tag_green_energy" model="estate.property.tag">
+            <field name="name">Green Energy</field>
+        </record>
+    </data>
+</odoo>

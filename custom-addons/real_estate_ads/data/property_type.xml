@@ -1,0 +1,49 @@
+<odoo>
+    <data noupdate="1">
+        <record id="property_type_house" model="estate.property.type">
+            <field name="name">House</field>
+        </record>
+        <record id="property_type_apartment" model="estate.property.type">
+            <field name="name">Apartment</field>
+        </record>
+        <record id="property_type_penthouse" model="estate.property.type">
+            <field name="name">Penthouse</field>
+        </record>
+        <record id="property_type_castle" model="estate.property.type">
+            <field name="name">Castle</field>
+        </record>
+        <record id="property_type_loft" model="estate.property.type">
+            <field name="name">Loft</field>
+        </record>
+        <record id="property_type_townhouse" model="estate.property.type">
+            <field name="name">Townhouse</field>
+        </record>
+        <record id="property_type_studio" model="estate.property.type">
+            <field name="name">Studio</field>
+        </record>
+        <record id="property_type_villa" model="estate.property.type">
+            <field name="name">Villa</field>
+        </record>
+        <record id="property_type_bungalow" model="estate.property.type">
+            <field name="name">Bungalow</field>
+        </record>
+        <record id="property_type_ranch" model="estate.property.type">
+            <field name="name">Ranch</field>
+        </record>
+        <record id="property_type_duplex" model="estate.property.type">
+            <field name="name">Duplex</field>
+        </record>
+        <record id="property_type_cottage" model="estate.property.type">
+            <field name="name">Cottage</field>
+        </record>
+        <record id="property_type_mansion" model="estate.property.type">
+            <field name="name">Mansion</field>
+        </record>
+        <record id="property_type_farmhouse" model="estate.property.type">
+            <field name="name">Farmhouse</field>
+        </record>
+        <record id="property_type_condominium" model="estate.property.type">
+            <field name="name">Condominium</field>
+        </record>
+    </data>
+</odoo>
